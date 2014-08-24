@@ -10,7 +10,7 @@
 makeCacheMatrix <- function(x = numeric()) {
     m <- NULL    # m will be set to NULL, it will contain inverse of matrix in future
     
-    set <- function(y) {   # Set will save the original data in previous environment to x and NULL to m
+    set <- function(y) {   # set will save the original data in previous environment to x and NULL to m
         x <<- y 
         m <<- NULL
     }
@@ -22,7 +22,7 @@ makeCacheMatrix <- function(x = numeric()) {
     
     getInvertMatrix <- function() { m }    # getInvertMatrix will return the inverted matrix m
     
-    list(set = set, 
+    list(set = set,     # This list will be returned to the object that called this function
          get = get,
          setInvertMatrix = setInvertMatrix,
          getInvertMatrix = getInvertMatrix)
