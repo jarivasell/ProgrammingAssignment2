@@ -1,6 +1,6 @@
-## Submission for programming assignment 2
+## Fully functioning submission for R programming assignment 2
 ## Added more comments to the code to make all parts of the function more clear
-
+##
 ## Usage: 
 ## MatrixName <- makeCacheMatrix(inputMatrix)
 ##
@@ -34,6 +34,9 @@ makeCacheMatrix <- function(x = numeric()) {
 ## cacheSolve can be only used on variables that has been created makeCacheMatrix!
 ## cacheSolve will call the functions that are defined above
 ## cacheSolve will return inverted matrix from cache if it has been stored there
+##
+## Usage: 
+## cacheSolve(MatrixName)
 
 cacheSolve <- function(x, ...) {    
     
